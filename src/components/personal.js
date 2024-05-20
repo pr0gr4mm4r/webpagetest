@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from './bootstrapnavbarpic.gif'
+import logo from './webseitenportrait.jpeg'
 
 export default function Personal() {
   return (
