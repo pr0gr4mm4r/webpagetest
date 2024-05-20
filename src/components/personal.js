@@ -8,7 +8,7 @@ export default function Personal() {
         <div className="col-md-4">
           <img src={logo} className="img-fluid" alt="Portrait von David" />
         </div>
-        <div className="col-md-8">
+        <div className="col-md-8" >
           <h2>Über mich</h2>
           <p>Hallo, mein Name ist David und ich bin von Beruf Systemadministrator. Neben meiner regulären Tätigkeit als Systemadministrator biete ich meine Dienstleistungen auch als Freelancer an. Ich habe Erfahrung in verschiedenen Bereichen der IT-Infrastruktur und -Administration.</p>
           <p>Einige meiner bisherigen Kunden sind Manimedia und Korrektur.de, für die ich erfolgreich Projekte umgesetzt und IT-Lösungen bereitgestellt habe. Ich bin bestrebt, meinen Kunden stets die bestmöglichen Lösungen anzubieten und sie bei der Optimierung ihrer Systeme zu unterstützen.</p>
