@@ -1,8 +1,8 @@
 import './App.css';
 import Site from './components/site'
-import Leistungen from './components/leistungen.js'
-import Pricing from './components/pricing.js'
-import Personal from './components/personal.js'
+import Home from './components/home'
+import Contact from './components/contact'
+import About from './components/personal'
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 
@@ -11,11 +11,11 @@ function App() {
     <Router>
       <div>
         <Site />
-        <div className="container mt-3" style={{ backgroundColor: 'gray', color: 'white', minHeight: '100vh', marginTop: '100px', marginLeft: '100px', marginRight: '20px' }}>
+        <div className="container mt-3" style={{ backgroundColor: 'gray', color: 'white', minHeight: '100vh' }}>
           <Routes>
-            <Route path="/leistungen" element={<Leistungen />} />
-            <Route path="/pricing" element={<Pricing />} />
-            <Route path="/personal" element={<Personal />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </div>
