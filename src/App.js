@@ -3,7 +3,7 @@ import Site from './components/site'
 import Home from './components/home'
 import Contact from './components/contact'
 import About from './components/personal'
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
+            <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
       </div>
