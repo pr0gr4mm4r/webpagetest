@@ -1,7 +1,13 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import backgroundImageUrl from './nature-8727795.jpg';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleExperienceMoreClick = () => {
+    navigate('/about'); // Navigiere zu der gewünschten Route
+  };
 
   return (
     <div style={{
@@ -25,7 +31,14 @@ const Home = () => {
           Welcome to Raub Media
         </h1>
         <p style={{ fontSize: '1.2em', marginBottom: '1em' }}>
-          Wir bieten Ihnen die besten Dienstleistungen in [Dein Bereich]
+          Wir bieten Ihnen die besten Dienstleistungen im Bereich IT
+        </p>
+      </section>
+
+      <section style={{ marginBottom: '2em', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '1em', borderRadius: '10px' }}>
+        <h2>About us</h2>
+        <p>
+          We are a humble IT company located in Karlsruhe.
         </p>
         <button
           style={{
@@ -37,40 +50,25 @@ const Home = () => {
             borderRadius: '0.3em',
             cursor: 'pointer',
           }}
+          onClick={handleExperienceMoreClick}
         >
-          Mehr erfahren
+          Experience more
         </button>
-      </section>
-
-      <section style={{ marginBottom: '2em', backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '1em', borderRadius: '10px' }}>
-        <h2>About us</h2>
-        <p>
-          We are a humble IT company located in Kalrsruhe.
-        </p>
-        <button style={{
-            padding: '0.5em 2em',
-            fontSize: '1em',
-            color: '#fff',
-            backgroundColor: '#007BFF',
-            border: 'none',
-            borderRadius: '0.3em',
-            cursor: 'pointer',
-          }}>Experience more</button>
       </section>
 
       <section style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)', padding: '1em', borderRadius: '10px' }}>
         <h2>Unsere Leistungen</h2>
         <p>
-          extending IT-Infrastructure (private or business)
+          Extending IT-Infrastructure (private or business)
         </p>
         <p>
-          developing and installation of software solutions
+          Developing and installation of software solutions
         </p>
         <p>
-          data transfer
+          Data transfer
         </p>
         <p>
-          consulting
+          Consulting
         </p>
       </section>
     </div>
