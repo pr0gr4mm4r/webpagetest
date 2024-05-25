@@ -3,7 +3,13 @@ import logo from './webseitenportrait.jpeg'
 
 export default function Personal() {
   return (
-      <div className="row" style={{ marginTop: '20px' }}>
+    <div className="container" style={{
+      background: 'rgba(0, 0, 0, 0.75)', 
+      padding: '2em', 
+      borderRadius: '10px', 
+      marginTop: '2em'
+    }}>
+      <div className="row">
         <div className="col-md-4">
           <img src={logo} className="img-fluid" alt="Portrait von David" style={{ marginTop: '20px' }} />
         </div>
@@ -13,8 +19,9 @@ export default function Personal() {
           <p>Einige meiner bisherigen Kunden sind Manimedia und Korrektur.de, für die ich erfolgreich Projekte umgesetzt und IT-Lösungen bereitgestellt habe. Ich bin bestrebt, meinen Kunden stets die bestmöglichen Lösungen anzubieten und sie bei der Optimierung ihrer Systeme zu unterstützen.</p>
           <p>Meine Leidenschaft für Technologie und mein Engagement für eine zuverlässige und effiziente IT-Infrastruktur treiben mich an, kontinuierlich mein Wissen zu erweitern und mich neuen Herausforderungen zu stellen.</p>
           <p>Wenn Sie Interesse an meinen Dienstleistungen oder Fragen haben, zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten!</p>
-          <p>    - david.baur@manimedia.de -</p>
+          <button className='btn btn-dark'>Kontaktieren Sie mich </button>
         </div>
       </div>
+    </div>
   )
 }

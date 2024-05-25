@@ -1,17 +1,34 @@
 import './App.css';
-import Site from './components/site'
+import Navigationbar from './components/navigationbar'
 import Home from './components/home'
 import Contact from './components/contact'
 import About from './components/personal'
-import { BrowserRouter as Router, Route, Routes, Link, Navigate} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import backgroundImageUrl from './components/nature-8727795_1920.jpg';
 
 
 function App() {
   return (
     <Router>
-      <div>
-        <Site />
-        <div style={{ backgroundColor: 'gray', color: 'white', minHeight: '100vh' }}>
+      <div style={{ overflowY: 'auto' }}>
+        <Navigationbar />
+        <div style={{
+          backgroundImage: `url(${backgroundImageUrl})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundRepeat: 'no-repeat',
+          width: '100vw',
+          height: '170vh',
+          overflowY: 'auto',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'flex-start', // Positioniere den Inhalt näher am oberen Rand
+          alignItems: 'center',
+          color: 'white',
+          textAlign: 'center',
+          padding: '2em',
+          boxSizing: 'border-box'
+        }}>
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
