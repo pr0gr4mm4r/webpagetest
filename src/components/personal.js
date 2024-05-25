@@ -3,7 +3,6 @@ import logo from './webseitenportrait.jpeg'
 
 export default function Personal() {
   return (
-    <div>
       <div className="row" style={{ marginTop: '20px' }}>
         <div className="col-md-4">
           <img src={logo} className="img-fluid" alt="Portrait von David" style={{ marginTop: '20px' }} />
@@ -17,6 +16,5 @@ export default function Personal() {
           <p>    - david.baur@manimedia.de -</p>
         </div>
       </div>
-    </div>
   )
 }

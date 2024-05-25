@@ -20,7 +20,7 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', formData, 'YOUR_USER_ID')
+    emailjs.send('service_8a2car8', 'template_jrw2wwf', formData, 'Cy0typgzHmK_BUfzB')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
         alert('Nachricht erfolgreich gesendet!');
@@ -87,4 +87,3 @@ export default function Contact() {
     </div>
   );
 }
-

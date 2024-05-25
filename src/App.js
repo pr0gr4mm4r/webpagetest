@@ -11,7 +11,7 @@ function App() {
     <Router>
       <div>
         <Site />
-        <div className="container mt-3" style={{ backgroundColor: 'gray', color: 'white', minHeight: '100vh' }}>
+        <div style={{ backgroundColor: 'gray', color: 'white', minHeight: '100vh' }}>
           <Routes>
             <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
