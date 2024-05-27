@@ -32,13 +32,13 @@ export default function Contact() {
 
   return (
     <div className="container" style={{
-      background: 'rgba(0, 0, 0, 0.75)', 
-      padding: '2em', 
-      borderRadius: '10px', 
+      background: 'rgba(0, 0, 0, 0.8)',
+      padding: '2em',
+      borderRadius: '10px',
       marginTop: '2em',
       maxWidth: '600px' // Maximale Breite des Containers reduziert
     }}>
-      <h2 style={{ color: 'white' }}>Kontakt</h2>
+      <h2 style={{ color: 'white' }}>Contact</h2>
       <form onSubmit={handleSubmit}>
         <div className="row mb-3">
           <div className="col">
@@ -87,7 +87,7 @@ export default function Contact() {
             className="form-control"
             id="message"
             name="message"
-            rows="6" // Höhe des Textbereichs erhöht
+            rows="6"
             value={formData.message}
             onChange={handleChange}
             required

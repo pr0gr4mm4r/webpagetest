@@ -1,12 +1,20 @@
 import React from 'react'
 import logo from './webseitenportrait.jpeg'
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Personal() {
+  const navigate = useNavigate();
+
+  const handleExperienceMoreClick = () => {
+    navigate('/contact');
+  };
   return (
+
     <div className="container" style={{
-      background: 'rgba(0, 0, 0, 0.75)', 
-      padding: '2em', 
-      borderRadius: '10px', 
+      background: 'rgba(0, 0, 0, 0.8)',
+      padding: '2em',
+      borderRadius: '10px',
       marginTop: '2em'
     }}>
       <div className="row">
@@ -19,7 +27,7 @@ export default function Personal() {
           <p>Einige meiner bisherigen Kunden sind Manimedia und Korrektur.de, für die ich erfolgreich Projekte umgesetzt und IT-Lösungen bereitgestellt habe. Ich bin bestrebt, meinen Kunden stets die bestmöglichen Lösungen anzubieten und sie bei der Optimierung ihrer Systeme zu unterstützen.</p>
           <p>Meine Leidenschaft für Technologie und mein Engagement für eine zuverlässige und effiziente IT-Infrastruktur treiben mich an, kontinuierlich mein Wissen zu erweitern und mich neuen Herausforderungen zu stellen.</p>
           <p>Wenn Sie Interesse an meinen Dienstleistungen oder Fragen haben, zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten!</p>
-          <button className='btn btn-dark'>Kontaktieren Sie mich </button>
+          <button className='btn btn-dark' onClick={handleExperienceMoreClick}> Kontaktieren Sie mich </button>
         </div>
       </div>
     </div>

@@ -10,10 +10,10 @@ const Home = () => {
 
   return (
     <div style={{
-      background: 'rgba(0, 0, 0, 0.75)', 
-      padding: '2em', 
-      borderRadius: '10px', 
-      margin: '2em auto', 
+      background: 'rgba(0, 0, 0, 0.8)',
+      padding: '3em',
+      borderRadius: '10px',
+      margin: '3em auto',
       maxWidth: '800px'
     }}>
       <section style={{ marginBottom: '2em' }}>
