@@ -9,7 +9,7 @@ import backgroundImageUrl from './components/board-453758_1920.jpg';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/webpagetest">
       <div style={{ overflowY: 'auto' }}>
         <Navigationbar />
         <div style={{
