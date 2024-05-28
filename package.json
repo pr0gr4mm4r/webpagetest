@@ -2,7 +2,7 @@
   "homepage": "https://pr0gr4mm4r.github.io/webpagetest",
   "name": "webprofile",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@preact/signals-react": "^2.0.1",
     "@testing-library/jest-dom": "^5.17.0",
