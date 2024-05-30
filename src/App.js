@@ -26,7 +26,7 @@ function App() {
           alignItems: 'center',
           color: 'white',
           textAlign: 'center',
-          padding: '2em',
+          padding: '1em',
           boxSizing: 'border-box'
         }}>
           <Routes>
