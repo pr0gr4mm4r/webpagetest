@@ -14,7 +14,7 @@ const Home = () => {
       justifyContent: 'space-between',
       alignItems: 'flex-start',
       padding: '2em', // Weniger Padding für weniger Abstand zum Rand
-      background: 'rgba(0, 0, 0, 0.8)',
+      background: 'rgba(0, 0, 0, 0.85)',
       borderRadius: '10px',
       margin: '2em auto',
       width: '82%', // Breite des Haupt-Containers erhöht

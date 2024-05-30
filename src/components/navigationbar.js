@@ -2,7 +2,7 @@ import React from 'react'
 import { signal } from '@preact/signals-react'
 import 'bootstrap/dist/css/bootstrap.css';
 import { Link } from 'react-router-dom';
-import corporatelogo from './Designer.png';
+import corporatelogo from './chess-26779_1280-2 Kopie 3.png';
 
 export const test = signal("ee");
 

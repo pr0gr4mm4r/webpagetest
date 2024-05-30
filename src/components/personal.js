@@ -22,12 +22,12 @@ export default function Personal() {
           <img src={logo} className="img-fluid" alt="Portrait von David" style={{ marginTop: '20px' }} />
         </div>
         <div className="col-md-8" style={{ marginTop: '20px' }}>
-          <h2>Über mich</h2>
-          <p>Hallo, mein Name ist David und ich bin von Beruf Systemadministrator. Ich habe meinen Bachelor in "Angewandter Informatik" an der DHBW Karlsruhe gemacht. Neben meiner regulären Arbeit im BLM Karlsruhe biete ich meine Dienstleistungen auch als Freelancer an. Ich habe Erfahrung in verschiedenen Bereichen der IT-Infrastruktur und -Administration.</p>
-          <p>Einige meiner bisherigen Kunden sind Manimedia und Korrektur.de, für die ich erfolgreich Projekte umgesetzt und IT-Lösungen bereitgestellt habe. Ich bin bestrebt, meinen Kunden stets die bestmöglichen Lösungen anzubieten und sie bei der Optimierung ihrer Systeme zu unterstützen.</p>
-          <p>Meine Leidenschaft für Technologie und mein Engagement für eine zuverlässige und effiziente IT-Infrastruktur treiben mich an, kontinuierlich mein Wissen zu erweitern und mich neuen Herausforderungen zu stellen.</p>
-          <p>Wenn Sie Interesse an meinen Dienstleistungen oder Fragen haben, zögern Sie nicht, mich zu kontaktieren. Ich freue mich darauf, mit Ihnen zusammenzuarbeiten!</p>
-          <button className='btn btn-dark' onClick={handleExperienceMoreClick}> Kontaktieren Sie mich </button>
+          <h2>About Me</h2>
+          <p>Hello, my name is David and I am a professional system administrator. I earned my Bachelor's degree in "Applied Computer Science" from DHBW Karlsruhe. In addition to my regular work at BLM Karlsruhe, I also offer my services as a freelancer. I have experience in various areas of IT infrastructure and administration.</p>
+          <p>Some of my previous clients include Manimedia and Korrektur.de, for whom I have successfully implemented projects and provided IT solutions. I am dedicated to offering my clients the best possible solutions and assisting them in optimizing their systems.</p>
+          <p>My passion for technology and my commitment to a reliable and efficient IT infrastructure drive me to continuously expand my knowledge and take on new challenges.</p>
+          <p>If you are interested in my services or have any questions, please do not hesitate to contact me. I look forward to working with you!</p>
+          <button className='btn btn-dark' onClick={handleExperienceMoreClick}>Contact Me</button>
         </div>
       </div>
     </div>

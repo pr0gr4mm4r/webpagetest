@@ -23,10 +23,10 @@ export default function Contact() {
     emailjs.send('service_8a2car8', 'template_jrw2wwf', formData, 'Cy0typgzHmK_BUfzB')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Nachricht erfolgreich gesendet!');
+        alert('Message sent successfully!');
       }, (error) => {
         console.error('FAILED...', error);
-        alert('Nachricht konnte nicht gesendet werden.');
+        alert('Message could not be sent.');
       });
   };
 
@@ -36,13 +36,13 @@ export default function Contact() {
       padding: '2em',
       borderRadius: '10px',
       marginTop: '2em',
-      maxWidth: '600px' // Maximale Breite des Containers reduziert
+      maxWidth: '600px' // Reduced the maximum width of the container
     }}>
       <h2 style={{ color: 'white' }}>Contact</h2>
       <form onSubmit={handleSubmit}>
         <div className="row mb-3">
           <div className="col">
-            <label htmlFor="firstName" className="form-label" style={{ color: 'white' }}>Vorname</label>
+            <label htmlFor="firstName" className="form-label" style={{ color: 'white' }}>First Name</label>
             <input
               type="text"
               className="form-control"
@@ -55,7 +55,7 @@ export default function Contact() {
             />
           </div>
           <div className="col">
-            <label htmlFor="lastName" className="form-label" style={{ color: 'white' }}>Nachname</label>
+            <label htmlFor="lastName" className="form-label" style={{ color: 'white' }}>Last Name</label>
             <input
               type="text"
               className="form-control"
@@ -69,7 +69,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label" style={{ color: 'white' }}>E-Mail-Adresse</label>
+          <label htmlFor="email" className="form-label" style={{ color: 'white' }}>Email Address</label>
           <input
             type="email"
             className="form-control"
@@ -82,7 +82,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="message" className="form-label" style={{ color: 'white' }}>Nachricht</label>
+          <label htmlFor="message" className="form-label" style={{ color: 'white' }}>Message</label>
           <textarea
             className="form-control"
             id="message"
@@ -94,7 +94,7 @@ export default function Contact() {
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'white', border: '1px solid #ccc' }}
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-dark">Absenden</button>
+        <button type="submit" className="btn btn-dark">Send</button>
       </form>
     </div>
   );
