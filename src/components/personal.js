@@ -19,7 +19,7 @@ export default function Personal() {
       overflowX: 'hidden' // Prevent horizontal scrolling
     }}>
       <div className="row">
-        <div className="col-md-4 col-12"> {/* Ensure the image takes full width on small screens */}
+        <div className="col-md-4 col-12" style={{ display: 'flex', justifyContent: 'center' }}> {/* Ensure the image takes full width on small screens */}
           <img src={logo} className="img-fluid" alt="Portrait von David" style={{ marginTop: '20px', borderRadius: '10px' }} />
         </div>
         <div className="col-md-8 col-12" style={{ marginTop: '20px' }}> {/* Ensure the text takes full width on small screens */}
