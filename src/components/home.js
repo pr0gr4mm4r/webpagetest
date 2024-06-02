@@ -5,24 +5,25 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleExperienceMoreClick = () => {
-    navigate('/about'); // Navigiere zu der gewünschten Route
+    navigate('/about'); // Navigate to the desired route
   };
 
   return (
     <div style={{
       display: 'flex',
+      flexDirection: 'column', // Column direction for smaller screens
       justifyContent: 'space-between',
       alignItems: 'flex-start',
-      padding: '2em', // Weniger Padding für weniger Abstand zum Rand
+      padding: '2em', // Less padding for less distance to the edge
       background: 'rgba(0, 0, 0, 0.85)',
       borderRadius: '10px',
       margin: '2em auto',
-      width: '82%', // Breite des Haupt-Containers erhöht
+      width: '82%', // Increased width of the main container
       color: 'white'
     }}>
       <div style={{
-        maxWidth: '70%', // Breite des Inhaltsblocks beibehalten
-        marginRight: '1em' // Weniger Abstand zwischen den Abschnitten
+        maxWidth: '100%', // Maintain the width of the content block
+        marginBottom: '1em' // Less spacing between sections
       }}>
         <section style={{ textAlign: 'left', marginBottom: '2em' }}>
           <h1 style={{ fontSize: '2em', marginBottom: '0.5em' }}>
@@ -44,28 +45,28 @@ const Home = () => {
           }}>
             <li style={{
               fontSize: '1.3em',
-              textAlign: 'left', // Sicherstellen, dass Text linksbündig ist
-              marginBottom: '0.5em' // Abstand zwischen den Listenelementen
+              textAlign: 'left', // Ensure text is left-aligned
+              marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Analysing</b> IT-Infrastructure (private or business)
             </li>
             <li style={{
               fontSize: '1.3em',
-              textAlign: 'left', // Sicherstellen, dass Text linksbündig ist
-              marginBottom: '0.5em' // Abstand zwischen den Listenelementen
+              textAlign: 'left', // Ensure text is left-aligned
+              marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Developing</b> and installation of software solutions
             </li>
             <li style={{
               fontSize: '1.3em',
-              textAlign: 'left', // Sicherstellen, dass Text linksbündig ist
-              marginBottom: '0.5em' // Abstand zwischen den Listenelementen
+              textAlign: 'left', // Ensure text is left-aligned
+              marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Data</b> modelling, transferring and migration
             </li>
             <li style={{
               fontSize: '1.3em',
-              textAlign: 'left' // Sicherstellen, dass Text linksbündig ist
+              textAlign: 'left' // Ensure text is left-aligned
             }}>
               <b>Consulting</b>
             </li>
@@ -74,7 +75,7 @@ const Home = () => {
 
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
-          padding: '1.5em', // Weniger Padding für die Sektionen
+          padding: '1.5em', // Less padding for sections
           borderRadius: '10px'
         }}>
           <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Mission</h2>
@@ -95,7 +96,7 @@ const Home = () => {
         </section>
       </div>
 
-      <div style={{ flex: '1', maxWidth: '30%' }}>
+      <div style={{ width: '100%' }}>
         <div style={{
           position: 'relative',
           paddingBottom: '56.25%', // 16:9 aspect ratio
