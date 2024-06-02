@@ -25,22 +25,22 @@ const Home = () => {
         marginRight: '1em' // Weniger Abstand zwischen den Abschnitten
       }}>
         <section style={{ textAlign: 'left', marginBottom: '2em' }}>
-          <h1 style={{ fontSize: '3em', marginBottom: '0.5em' }}>
-            Welcome to <b>BaurDigital</b>
+          <h1 style={{ fontSize: '2em', marginBottom: '0.5em' }}>
+            <b>Welcome!</b>
           </h1>
         </section>
 
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
-          padding: '1.5em', // Weniger Padding für die Sektionen
+          padding: '1.5em',
           borderRadius: '10px',
           marginBottom: '1.5em'
         }}>
           <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Services</h2>
           <ul style={{
             listStyleType: 'disc',
-            paddingLeft: '1.5em', // Einrückung für die Liste
-            margin: 0 // Entferne Standardabstand der Liste
+            paddingLeft: '1.5em',
+            margin: 0
           }}>
             <li style={{
               fontSize: '1.3em',
@@ -95,19 +95,31 @@ const Home = () => {
         </section>
       </div>
 
-      <div style={{
-        width: '43%' // Breite des YouTube-Videos beibehalten
-      }}>
-        <iframe
-          width="100%"
-          height="250"
-          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          style={{ borderRadius: '10px' }}
-        ></iframe>
+      <div style={{ flex: '1', maxWidth: '30%' }}>
+        <div style={{
+          position: 'relative',
+          paddingBottom: '56.25%', // 16:9 aspect ratio
+          height: 0,
+          overflow: 'hidden',
+          maxWidth: '100%',
+          background: '#000',
+          borderRadius: '10px'
+        }}>
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              borderRadius: '10px'
+            }}
+          ></iframe>
+        </div>
       </div>
     </div>
   );

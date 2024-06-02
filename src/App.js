@@ -17,7 +17,7 @@ function App() {
           backgroundSize: 'cover',
           backgroundPosition: 'bottom',
           backgroundRepeat: 'no-repeat',
-          width: '100vw',
+          width: 'auto',
           height: '170vh',
           overflowY: 'auto',
           display: 'flex',
