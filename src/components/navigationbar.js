@@ -1,14 +1,9 @@
-import React from 'react'
-import { signal } from '@preact/signals-react'
-import 'bootstrap/dist/css/bootstrap.css';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import corporatelogo from './chess-26779_1280-2 Kopie 3.png';
 
-export const test = signal("ee");
-
 export default function Navigationbar() {
-  test.value = "haha";
-
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{ backgroundColor: '#000', width: '100%' }}>
       <Link className="navbar-brand d-flex align-items-center" to="/home">
@@ -21,7 +16,6 @@ export default function Navigationbar() {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
           <li className="nav-item">
-
             <Link className="nav-link" to="/home">Home</Link>
           </li>
           <li className="nav-item">
