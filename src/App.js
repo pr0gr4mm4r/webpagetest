@@ -10,16 +10,16 @@ import backgroundImageUrl from './components/board-453758_1920.jpg';
 function App() {
   return (
     <Router>
-      <div style={{ overflowY: 'auto' }}>
+      <div style={{ overflowY: 'hidden' }}>
         <Navigationbar />
         <div style={{
           backgroundImage: `url(${backgroundImageUrl})`,
           backgroundSize: 'cover',
           backgroundPosition: 'bottom',
-          backgroundRepeat: 'no-repeat',
+          backgroundRepeat: 'repeat',
           width: 'auto',
           height: '170vh',
-          overflowY: 'auto',
+          overflowY: 'hidden',
           display: 'flex',
           flexDirection: 'column',
           justifyContent: 'flex-start',
