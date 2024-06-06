@@ -10,7 +10,15 @@ export default function Navigationbar() {
         <img src={corporatelogo} width="35" height="35" className="d-inline-block align-top ms-2 me-2" alt="" />
         BaurDigital
       </Link>
-      <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
@@ -23,6 +31,31 @@ export default function Navigationbar() {
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/about">About</Link>
+          </li>
+        </ul>
+      </div>
+      <div
+        className="collapse"
+        id="navbarNavDropdown"
+        style={{
+          position: 'absolute',
+          top: '56px',
+          right: '0',
+          width: '200px', // Adjusted width for better visibility
+          backgroundColor: 'rgba(0, 0, 0, 0.9)',
+          zIndex: 9999,
+          borderRadius: '0 0 0 10px', // Optional: for better aesthetics
+        }}
+      >
+        <ul className="navbar-nav" style={{ flexDirection: 'column', alignItems: 'flex-end', paddingRight: '1rem' }}>
+          <li className="nav-item">
+            <Link className="nav-link" to="/home" style={{ textAlign: 'right' }}>Home</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/contact" style={{ textAlign: 'right' }}>Contact</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/about" style={{ textAlign: 'right' }}>About</Link>
           </li>
         </ul>
       </div>
