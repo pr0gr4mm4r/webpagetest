@@ -36,7 +36,8 @@ export default function Contact() {
       padding: '2em',
       borderRadius: '10px',
       marginTop: '2em',
-      maxWidth: '600px' // Reduced the maximum width of the container
+      maxWidth: '600px', // Reduced the maximum width of the container
+      border: '1px solid white'
     }}>
       <h2 style={{ color: 'white' }}>Contact</h2>
       <form onSubmit={handleSubmit}>
@@ -94,7 +95,7 @@ export default function Contact() {
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'white', border: '1px solid #ccc' }}
           ></textarea>
         </div>
-        <button type="submit" className="btn btn-dark">Send</button>
+        <button style={{ border: '1px solid white' }} type="submit" className="btn btn-dark">Send</button>
       </form>
     </div>
   );

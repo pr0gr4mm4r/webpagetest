@@ -19,23 +19,20 @@ const Home = () => {
       borderRadius: '10px',
       margin: '2em auto',
       width: '80%', // Increased width of the main container
-      color: 'white'
+      color: 'white',
+      border: '1px solid white'
     }}>
       <div style={{
         maxWidth: '100%', // Maintain the width of the content block
         marginBottom: '1em' // Less spacing between sections
       }}>
-        <section style={{ textAlign: 'left', marginBottom: '2em' }}>
-          <h1 style={{ fontSize: '2em', marginBottom: '0.5em' }}>
-            <b>Welcome!</b>
-          </h1>
-        </section>
 
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
           padding: '1.5em',
           borderRadius: '10px',
-          marginBottom: '1.5em'
+          marginBottom: '1.5em',
+          border: '1px solid white'
         }}>
           <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Services</h2>
           <ul style={{
@@ -76,7 +73,8 @@ const Home = () => {
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
           padding: '1.5em', // Less padding for sections
-          borderRadius: '10px'
+          borderRadius: '10px',
+          border: '1px solid white'
         }}>
           <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Mission</h2>
           <p style={{ fontSize: '1.3em', marginBottom: '1.5em' }}>
@@ -88,7 +86,8 @@ const Home = () => {
             style={{
               fontSize: '1.2em',
               padding: '0.5em 1em',
-              borderRadius: '5px'
+              borderRadius: '5px',
+              border: '1px solid white'
             }}
           >
             Experience more
