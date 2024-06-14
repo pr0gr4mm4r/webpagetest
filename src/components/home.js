@@ -18,7 +18,7 @@ const Home = () => {
       background: 'rgba(0, 0, 0, 0.85)',
       borderRadius: '10px',
       margin: '2em auto',
-      width: '82%', // Increased width of the main container
+      width: '80%', // Increased width of the main container
       color: 'white'
     }}>
       <div style={{
