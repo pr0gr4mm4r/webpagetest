@@ -12,8 +12,8 @@ const Home = () => {
     <div style={{
       display: 'flex',
       flexDirection: 'column', // Column direction for smaller screens
-      justifyContent: 'space-between',
-      alignItems: 'flex-start',
+      justifyContent: 'center', // Center the sections
+      alignItems: 'center', // Center the sections
       padding: '2em', // Less padding for less distance to the edge
       background: 'rgba(0, 0, 0, 0.85)',
       borderRadius: '10px',
@@ -23,46 +23,47 @@ const Home = () => {
       border: '1px solid white'
     }}>
       <div style={{
-        maxWidth: '100%', // Maintain the width of the content block
+        width: '100%',
         marginBottom: '1em' // Less spacing between sections
       }}>
 
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
-          padding: '1.5em',
+          padding: '2em', // Adjusted padding for sections
           borderRadius: '10px',
           marginBottom: '1.5em',
-          border: '1px solid white'
+          border: '1px solid white',
+          textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Services</h2>
+          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>Services</h2>
           <ul style={{
             listStyleType: 'disc',
             paddingLeft: '1.5em',
             margin: 0
           }}>
             <li style={{
-              fontSize: '1.3em',
+              fontSize: '1.4em',
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Analysing</b> IT-Infrastructure (private or business)
             </li>
             <li style={{
-              fontSize: '1.3em',
+              fontSize: '1.4em',
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Developing</b> and installation of software solutions
             </li>
             <li style={{
-              fontSize: '1.3em',
+              fontSize: '1.4em',
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
               <b>Data</b> modelling, transferring and migration
             </li>
             <li style={{
-              fontSize: '1.3em',
+              fontSize: '1.4em',
               textAlign: 'left' // Ensure text is left-aligned
             }}>
               <b>Consulting</b>
@@ -72,19 +73,20 @@ const Home = () => {
 
         <section style={{
           background: 'rgba(255, 255, 255, 0.06)',
-          padding: '1.5em', // Less padding for sections
+          padding: '2em', // Adjusted padding for sections
           borderRadius: '10px',
-          border: '1px solid white'
+          border: '1px solid white',
+          textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2em', marginBottom: '1em' }}>Mission</h2>
-          <p style={{ fontSize: '1.3em', marginBottom: '1.5em' }}>
+          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>Mission</h2>
+          <p style={{ fontSize: '1.4em', marginBottom: '1.5em' }}>
             We are an IT company located in Karlsruhe.
           </p>
           <button
             className="btn btn-dark"
             onClick={handleExperienceMoreClick}
             style={{
-              fontSize: '1.2em',
+              fontSize: '1.3em',
               padding: '0.5em 1em',
               borderRadius: '5px',
               border: '1px solid white'
@@ -93,19 +95,6 @@ const Home = () => {
             Experience more
           </button>
         </section>
-      </div>
-
-      <div style={{ width: '100%' }}>
-        <div style={{
-          position: 'relative',
-          paddingBottom: '56.25%', // 16:9 aspect ratio
-          height: 0,
-          overflow: 'hidden',
-          maxWidth: '100%',
-          background: '#000',
-          borderRadius: '10px'
-        }}>
-        </div>
       </div>
     </div>
   );
