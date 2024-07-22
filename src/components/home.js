@@ -105,20 +105,6 @@ const Home = () => {
           background: '#000',
           borderRadius: '10px'
         }}>
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            style={{
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%',
-              borderRadius: '10px'
-            }}
-          ></iframe>
         </div>
       </div>
     </div>
