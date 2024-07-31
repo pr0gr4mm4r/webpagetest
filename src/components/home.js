@@ -1,8 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const navigate = useNavigate();
+  const { t } = useTranslation(); // useTranslation Hook hinzufügen
 
   const handleExperienceMoreClick = () => {
     navigate('/about'); // Navigate to the desired route
@@ -35,7 +37,7 @@ const Home = () => {
           border: '1px solid white',
           textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>Services</h2>
+          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('services')}</h2>
           <ul style={{
             listStyleType: 'disc',
             paddingLeft: '1.5em',
@@ -46,27 +48,27 @@ const Home = () => {
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
-              <b>Analysing</b> IT-Infrastructure (private or business)
+              <b>{t('analysing')}</b>{t(' IT-Infrastructure (private or business)')}
             </li>
             <li style={{
               fontSize: '1.4em',
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
-              <b>Developing</b> and installation of software solutions
+              <b>{t('developing')}</b> {t("and installation of software solutions")}
             </li>
             <li style={{
               fontSize: '1.4em',
               textAlign: 'left', // Ensure text is left-aligned
               marginBottom: '0.5em' // Spacing between list items
             }}>
-              <b>Data</b> modelling, transferring and migration
+              <b>{t('data')}</b>{t(" modelling, transferring and securing")}
             </li>
             <li style={{
               fontSize: '1.4em',
               textAlign: 'left' // Ensure text is left-aligned
             }}>
-              <b>Consulting</b>
+              <b>{t('consulting')}</b>
             </li>
           </ul>
         </section>
@@ -78,9 +80,9 @@ const Home = () => {
           border: '1px solid white',
           textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>Mission</h2>
+          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('mission')}</h2>
           <p style={{ fontSize: '1.4em', marginBottom: '1.5em' }}>
-            We are an IT company located in Karlsruhe.
+            {t("We are an IT company located in Karlsruhe.")}
           </p>
           <button
             className="btn btn-dark"
@@ -92,7 +94,7 @@ const Home = () => {
               border: '1px solid white'
             }}
           >
-            Experience more
+            {t('experience more ..')}
           </button>
         </section>
       </div>

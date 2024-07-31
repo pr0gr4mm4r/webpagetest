@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -9,6 +10,8 @@ export default function Contact() {
     email: '',
     message: ''
   });
+
+  const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,11 +42,11 @@ export default function Contact() {
       maxWidth: '600px', // Reduced the maximum width of the container
       border: '1px solid white'
     }}>
-      <h2 style={{ color: 'white' }}>Contact</h2>
+      <h2 style={{ color: 'white' }}>{t("Contact")}</h2>
       <form onSubmit={handleSubmit}>
         <div className="row mb-3">
           <div className="col">
-            <label htmlFor="firstName" className="form-label" style={{ color: 'white' }}>First Name</label>
+            <label htmlFor="firstName" className="form-label" style={{ color: 'white' }}>{t("First Name")}</label>
             <input
               type="text"
               className="form-control"
@@ -56,7 +59,7 @@ export default function Contact() {
             />
           </div>
           <div className="col">
-            <label htmlFor="lastName" className="form-label" style={{ color: 'white' }}>Last Name</label>
+            <label htmlFor="lastName" className="form-label" style={{ color: 'white' }}>{t("Last Name")}</label>
             <input
               type="text"
               className="form-control"
@@ -70,7 +73,7 @@ export default function Contact() {
           </div>
         </div>
         <div className="mb-3">
-          <label htmlFor="email" className="form-label" style={{ color: 'white' }}>Email Address</label>
+          <label htmlFor="email" className="form-label" style={{ color: 'white' }}>{t("Email Address")}</label>
           <input
             type="email"
             className="form-control"
@@ -83,7 +86,7 @@ export default function Contact() {
           />
         </div>
         <div className="mb-3">
-          <label htmlFor="message" className="form-label" style={{ color: 'white' }}>Message</label>
+          <label htmlFor="message" className="form-label" style={{ color: 'white' }}>{t("Message")}</label>
           <textarea
             className="form-control"
             id="message"
@@ -95,7 +98,7 @@ export default function Contact() {
             style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'white', border: '1px solid #ccc' }}
           ></textarea>
         </div>
-        <button style={{ border: '1px solid white' }} type="submit" className="btn btn-dark">Send</button>
+        <button style={{ border: '1px solid white' }} type="submit" className="btn btn-dark">{t("Send")}</button>
       </form>
     </div>
   );

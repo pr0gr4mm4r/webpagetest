@@ -5,6 +5,7 @@ import Contact from './components/contact'
 import About from './components/personal'
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import backgroundImageUrl from './components/board-453758_1920.jpg';
+import './i18n';
 
 
 function App() {
