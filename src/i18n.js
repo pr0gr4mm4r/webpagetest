@@ -34,7 +34,7 @@ i18n
                     "analysing": "Analysieren",
                     " IT-Infrastructure (private or business)": " der IT-Infrastructure (privat or geschäftlich)",
                     "data": "Daten",
-                    "modelling, transferring and securing": "-Modellierung, -Übertragung und -Sicherung",
+                    " modelling, transferring and securing": "-Modellierung, -Übertragung und -Sicherung",
                     "and installation of software solutions": "und Installation von Software-Lösungen",
                     "developing": "Entwicklung",
                     "Contact": "Kontakt",
