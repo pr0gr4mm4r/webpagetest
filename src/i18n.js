@@ -10,7 +10,7 @@ i18n
         resources: {
             en: {
                 translation: {
-                    "Dienstleistungen": "services",
+                    "Leistungen": "services",
                     "Mission": "mission",
                     "Erfahre mehr": "experience more..",
                     "Beratung": "consulting",
@@ -26,7 +26,7 @@ i18n
             },
             de: {
                 translation: {
-                    "services": "Dienstleistungen",
+                    "services": "Leistungen",
                     "mission": "Mission",
                     "experience more ..": "Erfahre mehr ..",
                     "consulting": "Beratung",
