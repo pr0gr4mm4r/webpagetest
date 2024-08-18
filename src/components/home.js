@@ -82,7 +82,7 @@ const Home = () => {
         }}>
           <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('mission')}</h2>
           <p style={{ fontSize: '1.4em', marginBottom: '1.5em' }}>
-            {t("We are an IT company located in Karlsruhe.")}
+            {t("Supporting people with IT related problems")}
           </p>
           <button
             className="btn btn-dark"
