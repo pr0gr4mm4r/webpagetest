@@ -14,14 +14,19 @@ i18n
                     "Mission": "mission",
                     "Erfahre mehr": "experience more..",
                     "Beratung": "consulting",
-                    "Leute bei IT-spezifischen Problemen unterstützen": "Supporting people with IT related problems",
+                    "Kunden bei IT-spezifischen Problemen unterstützen": "supporting customers with IT related problems",
                     "Analysieren": "analysing",
                     "der IT-Infrastructure (privat or geschäftlich)": "IT-Infrastructure (private or business)",
                     "Daten": "data",
                     "-Modellierung, -Übertragung und -Sicherung": "modelling, transferring and securing",
                     "und Installation von Software-Lösungen": "and installation of software solutions",
                     "Entwicklung": "developing",
-                    "Kontaktieren Sie mich": "Contact Me"
+                    "Kontaktieren Sie mich": "Contact Me",
+                    "Anfrage erfolgreich versendet!": "request sent successfully!",
+                    "Ihre Anfrage wird so bald wie möglich bearbeitet": "Your request will be processed as soon as possible",
+                    "Nachricht konnte nicht gesendet werden": "message could not be sent",
+                    "Weiter": "Continue",
+                    "Über Mich": "About Me"
                 }
             },
             de: {
@@ -30,7 +35,7 @@ i18n
                     "mission": "Mission",
                     "experience more ..": "Erfahre mehr ..",
                     "consulting": "Beratung",
-                    "Supporting people with IT related problems": "Leute bei IT-spezifischen Problemen unterstützen",
+                    "supporting customers with IT related problems": "Kunden bei IT-spezifischen Problemen unterstützen",
                     "analysing": "Analysieren",
                     " IT-Infrastructure (private or business)": " der IT-Infrastructure (privat or geschäftlich)",
                     "data": "Daten",
@@ -47,7 +52,12 @@ i18n
                     "My passion for technology and my commitment to a reliable and efficient IT infrastructure drive me to continuously expand my knowledge and take on new challenges.": "Meine Leidenschaft für Technologie und mein Engagement für eine zuverlässige und effiziente IT-Infrastruktur treiben mich dazu an, mein Wissen kontinuierlich zu erweitern und neue Herausforderungen anzunehmen.",
                     "If you are interested in my services or have any questions, please do not hesitate to contact me. I look forward to working with you!": "Wenn Sie an meinen Dienstleistungen interessiert sind oder Fragen haben, zögern Sie nicht, mich zu kontaktieren. Ich freue mich auf die Zusammenarbeit mit Ihnen!",
                     "Contact Me": "Kontaktieren Sie mich",
-                    "Info": "Info"                    // Füge hier weitere Übersetzungen hinzu
+                    "Info": "Info",
+                    "request sent successfully!": "Anfrage erfolgreich versendet!",
+                    "Your request will be processed as soon as possible": "Ihre Anfrage wird so bald wie möglich bearbeitet",
+                    "message could not be sent": "Nachricht konnte nicht gesendet werden",
+                    "Continue": "Weiter",
+                    "About Me": "Über Mich"
                 }
             }
         },
