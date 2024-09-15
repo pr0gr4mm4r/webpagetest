@@ -11,26 +11,33 @@ const Imprint = () => {
             borderRadius: '10px',
             margin: '2em auto',
             width: '80%',
+            height: '28%',
             color: 'white',
             border: '1px solid white',
-            textAlign: 'center'
+            textAlign: 'left'
         }}>
             <ul style={{
-                listStyleType: 'disc',
+                listStyleType: 'none', // Punkte entfernt
                 paddingLeft: '1.5em',
                 margin: 0
             }}>
                 <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
-                    Analysing IT Infrastructure (private or business)
+                    BaurDigital (IT-Dienstleistungen)
                 </li>
                 <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
-                    Developing and installation of software solutions
+                    Inhaber: David Baur
                 </li>
                 <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
-                    Data modeling, transferring, and securing
+                    Kontakt: david.baur99@gmail.com
                 </li>
-                <li style={{ fontSize: '1.4em' }}>
-                    Consulting
+                <li style={{ fontSize: '1.3em' }}>
+                    Tullastr. 63
+                </li>
+                <li style={{ fontSize: '1.3em' }}>
+                    76131 Karlsruhe
+                </li>
+                <li style={{ fontSize: '1.3em' }}>
+                    Deutschland
                 </li>
             </ul>
         </div>

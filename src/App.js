@@ -10,6 +10,7 @@ import Contact from './components/contact';
 import About from './components/personal';
 import Imprint from './components/imprint';
 import ScrollToTop from './components/ScrollToTop';  // Import ScrollToTop
+import DataProtection from './components/dataprotection';
 
 function App() {
   const [isAtBottom, setIsAtBottom] = useState(false);
@@ -57,7 +58,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
             <Route path="/impressum" element={<Imprint />} />
-            <Route path="/data-protection" element={<div>Data Protection Content</div>} />
+            <Route path="/data-protection" element={<DataProtection />} />
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>
         </div>
