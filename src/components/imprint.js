@@ -21,13 +21,13 @@ const Imprint = () => {
                 paddingLeft: '1.5em',
                 margin: 0
             }}>
-                <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
+                <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
                     BaurDigital (IT-Dienstleistungen)
                 </li>
-                <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
+                <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
                     Inhaber: David Baur
                 </li>
-                <li style={{ fontSize: '1.4em', marginBottom: '0.5em' }}>
+                <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
                     Kontakt: david.baur99@gmail.com
                 </li>
                 <li style={{ fontSize: '1.3em' }}>
