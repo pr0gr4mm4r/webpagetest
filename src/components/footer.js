@@ -1,13 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t } = useTranslation();
     return (
         <footer style={{
             backgroundColor: '#000',
             color: '#fff',
             width: '100%',
-            height: '80px',  // Adjusted height
+            height: '5%',  // Adjusted height
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
@@ -17,8 +19,8 @@ export default function Footer() {
             textAlign: 'center'
         }}>
             <div>
-                <Link to="/impressum" style={{ color: '#fff', marginRight: '20px', textDecoration: 'none' }}>Impressum</Link>
-                <Link to="/data-protection" style={{ color: '#fff', textDecoration: 'none' }}>Data Protection</Link>
+                <Link to="/impressum" style={{ color: '#fff', marginRight: '20px', textDecoration: 'none' }}>{t("Imprint")}</Link>
+                <Link to="/data-protection" style={{ color: '#fff', textDecoration: 'none' }}>{t("Data Protection")}</Link>
             </div>
         </footer>
     );

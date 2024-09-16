@@ -1,6 +1,8 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 const Imprint = () => {
+    const { t } = useTranslation();
     return (
         <div style={{
             display: 'flex',
@@ -22,13 +24,13 @@ const Imprint = () => {
                 margin: 0
             }}>
                 <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
-                    BaurDigital (IT-Dienstleistungen)
+                    BaurDigital {t("(IT-Services)")}
                 </li>
                 <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
-                    Inhaber: David Baur
+                    {t("Owner")}: David Baur
                 </li>
                 <li style={{ fontSize: '1.3em', marginBottom: '0.5em' }}>
-                    Kontakt: david.baur99@gmail.com
+                    {t("Contact")}: david.baur99@gmail.com
                 </li>
                 <li style={{ fontSize: '1.3em' }}>
                     Tullastr. 63
@@ -37,7 +39,7 @@ const Imprint = () => {
                     76131 Karlsruhe
                 </li>
                 <li style={{ fontSize: '1.3em' }}>
-                    Deutschland
+                    {t("Germany")}
                 </li>
             </ul>
         </div>

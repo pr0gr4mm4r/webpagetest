@@ -2,33 +2,39 @@ import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
     email: '',
-    message: ''
+    message: '',
+    agree: false // New state for the checkbox
   });
 
-  const [showSuccess, setShowSuccess] = useState(false); // Zustand für das Popup
+  const [showSuccess, setShowSuccess] = useState(false); // State for success popup
 
   const { t } = useTranslation();
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: type === 'checkbox' ? checked : value
     });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!formData.agree) {
+      alert(t('Please agree to the data processing terms before submitting.'));
+      return;
+    }
     emailjs.send('service_8a2car8', 'template_jrw2wwf', formData, 'Cy0typgzHmK_BUfzB')
       .then((response) => {
         console.log('SUCCESS!', response.status, response.text);
-        setShowSuccess(true); // Popup anzeigen
+        setShowSuccess(true); // Show success popup
       }, (error) => {
         console.error('FAILED...', error);
         alert(t('Nachricht konnte nicht gesendet werden'));
@@ -36,7 +42,7 @@ export default function Contact() {
   };
 
   const handleClosePopup = () => {
-    setShowSuccess(false); // Popup schließen
+    setShowSuccess(false); // Close popup
   };
 
   return (
@@ -151,6 +157,26 @@ export default function Contact() {
               style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)', color: 'white', border: '1px solid #ccc' }}
             ></textarea>
           </div>
+          <div className="mb-3 d-flex align-items-center">
+            <label htmlFor="agree" className="form-label" style={{ color: 'white', marginRight: '10px', fontSize: '10px', textAlign: 'left' }}>
+              {t("I agree that my data will be processed and stored in a non EU state.")}<br />
+              {t("Further details can be found on the")}
+              <Link to="/data-protection" style={{ color: '#0d6efd', marginLeft: '5px', fontSize: '11px' }}>
+                {t("data protection")}
+              </Link>{t(" page")}
+            </label>
+            <input
+              type="checkbox"
+              id="agree"
+              name="agree"
+              checked={formData.agree}
+              onChange={handleChange}
+              style={{ cursor: 'pointer' }}
+              required
+            />
+          </div>
+
+
           <button style={{ border: '1px solid white' }} type="submit" className="btn btn-dark">{t("Send")}</button>
         </form>
       </div>
