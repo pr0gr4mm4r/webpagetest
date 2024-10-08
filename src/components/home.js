@@ -37,7 +37,7 @@ const Home = () => {
           border: '1px solid white',
           textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('services')}</h2>
+          <h1 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('services')}</h1>
           <ul style={{
             listStyleType: 'disc',
             paddingLeft: '1.5em',
@@ -80,7 +80,7 @@ const Home = () => {
           border: '1px solid white',
           textAlign: 'center' // Center text within the section
         }}>
-          <h2 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('mission')}</h2>
+          <h1 style={{ fontSize: '2.2em', marginBottom: '1em' }}>{t('mission')}</h1>
           <p style={{ fontSize: '1.4em', marginBottom: '1.5em' }}>
             {t("supporting customers with IT related problems")}
           </p>

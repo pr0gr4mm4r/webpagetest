@@ -44,7 +44,6 @@ i18n
                     "Ihre Rechte:": "Your rights:",
                     "Sie haben jederzeit das Recht, Auskunft über die von mir gespeicherten Daten zu erhalten, deren Berichtigung oder Löschung zu verlangen sowie der weiteren Verarbeitung zu widersprechen. Zudem können Sie die Übertragung Ihrer Daten anfordern.": "You have the right at any time to request information about the data I store, to request correction or deletion, and to object to further processing. You can also request the transfer of your data.",
                     "Ich stimme zu, dass meine Daten in einem Nicht-EU-Staat verarbeitet und gespeichert werden.": "I agree that my data will be processed and stored in a non EU state.",
-                    "Datenschutzerklärung": "data protection section",
                     "Weitere Informationen finden Sie in der": "Further details can be found on the",
                     "     ": " page"
                 }
@@ -95,7 +94,7 @@ i18n
                     "Your rights:": "Ihre Rechte:",
                     "You have the right at any time to request information about the data I store, to request correction or deletion, and to object to further processing. You can also request the transfer of your data.": "Sie haben jederzeit das Recht, Auskunft über die von mir gespeicherten Daten zu erhalten, deren Berichtigung oder Löschung zu verlangen sowie der weiteren Verarbeitung zu widersprechen. Zudem können Sie die Übertragung Ihrer Daten anfordern.",
                     "I agree that my data will be processed and stored in a non EU state.": "Ich stimme zu, dass meine Daten in einem Nicht-EU-Staat verarbeitet und gespeichert werden.",
-                    "data protection": "Datenschutzerklärung",
+                    "Data Protection": "Datenschutzerklärung",
                     "Further details can be found on the": "Weitere Informationen finden Sie in der",
                     " page": "     "
                 }
