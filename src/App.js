@@ -57,7 +57,7 @@ function App() {
             <Route path="/home" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/about" element={<About />} />
-            <Route path="/impressum" element={<Imprint />} />
+            <Route path="/imprint" element={<Imprint />} />
             <Route path="/data-protection" element={<DataProtection />} />
             <Route path="*" element={<Navigate to="/home" />} />
           </Routes>

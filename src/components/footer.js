@@ -19,7 +19,7 @@ export default function Footer() {
             textAlign: 'center'
         }}>
             <div>
-                <Link to="/impressum" style={{ color: '#fff', marginRight: '20px', textDecoration: 'none' }}>{t("Imprint")}</Link>
+                <Link to="/imprint" style={{ color: '#fff', marginRight: '20px', textDecoration: 'none' }}>{t("Imprint")}</Link>
                 <Link to="/data-protection" style={{ color: '#fff', textDecoration: 'none' }}>{t("Data Protection")}</Link>
             </div>
         </footer>
